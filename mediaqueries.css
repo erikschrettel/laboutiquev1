@@ -58,3 +58,350 @@ display: none;
 }
 
 }
+
+/* Celu */
+@media (max-width: 576px) {
+
+body {
+    border: 1px solid red;
+}
+    .header {
+        background-color: #121212;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+        width: 100%;
+        max-width: 576px;
+        z-index: 999;
+        padding: 0;
+    }
+
+    .navbar {
+        display: none;
+    }
+    
+    .logo-container img{
+        height: 100px;
+        padding: 0 0 0 5px;
+        cursor: pointer; 
+        transition: all 0.4s;
+    }
+    
+    .header.logo-container img:hover{
+        transform: scale(1.1);
+    }
+    
+    .navbar, .navbar-list {
+        display: none;
+        padding: 0 20px;
+        font-size: 18px;
+        font-family: 'Lalezar';
+    }
+    
+    a {
+        display: inline;
+        position: relative;
+        color: #cbc9c9;
+    }
+    
+    .buttons {
+    display: none;
+    }
+    
+    .navbar, .menu-label i{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* Hero Section */
+
+.hero-section {
+    background-color:  #fafafa;
+    width: 100%;
+    max-width: 576px;
+    padding: 20px 0 20px 0;
+}
+
+.description {
+    background-color: #fafafa;
+    max-width: 576px;
+    height: 250px;
+    text-align:center;
+    padding: 0 10px;
+}
+
+.description h1 {
+    font-family: 'Pattaya';
+    font-weight: 550;
+    font-size: 39px;
+}
+
+.description h2 {
+    font-family: 'Jockey One';
+    font-size: 25px;
+    padding: 0 0 15px 0;
+}
+
+.description h4 {
+    text-align: center;
+    font-size: 17px;
+}
+
+.btn-ver {
+    margin: 5px;
+    padding: 6px 20px;
+    border-radius: 5px;
+    color: #fafafa;
+    border-color: white;
+    background-color: #a90101;
+}
+
+
+.hero-img {
+    display: none;
+    width: 0;
+}
+
+/* Categories products */
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 576px;
+    padding: 10px 5px;
+}
+
+/* buttons categories */
+
+.gibson {
+    background-size:contain;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+}
+
+.fender {
+    background-size: contain;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+}
+
+.prs {
+    background-size: contain;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+}
+
+.ibanez {
+    background-size: contain;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+}
+
+.gretsch {
+    background-size: contain;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+}
+
+/* Cards */
+
+.cards-p{
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+.cards-container {
+    max-width: 576px;
+    padding: 50px 10px;
+    gap: 10px;
+    
+    /* Box-shadow lindo en "proximos productos"
+    /* box-shadow: 11px 28px 50px rgba(249, 2, 2, 0.2); */
+}
+
+
+/* Proximamente */
+
+.new-products {
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.next-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 5px;
+}
+
+
+.bass-product{
+    background-image: url(./assets/imgs/logo/bajo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 450px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+.acoustic-product {
+    background-image: url(./assets/imgs/logo/ACUSTICAS_A_PRUEBA.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 450px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+.amps-product {
+    background-image: url(./assets/imgs/logo/marshall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+
+/* News */
+
+.h3 {
+    font-size: 14px;
+    font-family: 'Jockey One';
+}
+
+.news {
+    background-color: #e2e5eb;
+    width: 100%;
+    max-width: 576px;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.form input{
+    background-color: #e2e5eb;
+    width: 160px;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-family: 'Russo One';
+}
+
+.btn-subs button {
+    cursor: pointer;
+    background-color: #121212;
+    color: #fafafa;
+    font-family: 'Russo One';
+    width: 250px;
+    height: 50px;
+    border: solid 2px rgb(255, 255, 255);
+}
+
+.socials {
+    max-width: 576px;
+    display: flex;
+    justify-content:baseline;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+}
+
+.socials i{
+    background-color: #a90101;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 3px 4px;
+    color: #fafafa;
+    font-size: 20px;
+}
+
+.socials i:hover {
+    background-color: red;
+}
+
+.socials h4{
+    font-size: 13px;
+}
+
+/* Footer */
+
+.footer {
+    max-width: 576px;;
+    height: 400px;
+    padding: 30px 0;
+}
+
+.description-footer {
+    background-color: red;
+    padding: 80px 5px 0 5px;
+    display: flex;
+    justify-content: left;
+    text-align: baseline;
+}
+
+.logo-footer img {
+display: none
+}
+
+.footer .description-footer h5{
+padding: 3px 0 3px 0;
+font-size: 15px;
+color: white;
+}
+
+.footer .description-footer li{
+    padding: 3px 0 3px 0;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif2;
+}
+
+/* HR links footer */ 
+
+.ul-1 .hr-final {
+    width: 80%;
+    }
+    
+    
+    .ul-2 .hr-final {
+    width: 80%;
+    }
+    
+    
+    .ul-3 .hr-final {
+    width: 90%;
+    }
+    
+    
+    /* Hover footer links */
+    
+    .ul-1 a:hover{
+     color: white;
+    }
+    
+    .ul-2 a:hover {
+        color: white;
+    }
+    
+    .ul-3 a:hover {
+        color: white;
+    }
+
+}
