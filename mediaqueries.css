@@ -62,6 +62,15 @@ display: none;
 /* Celu */
 @media (max-width: 576px) {
 
+.cart {
+    left: 0;
+    width: 100%;
+    border: none;
+}
+
+.cart-item {
+    flex-wrap: wrap;
+}
 
 .header {
 display: flex;

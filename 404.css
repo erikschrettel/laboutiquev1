@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.hero-section404 {
+background-color: #f5f5f5;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 0 auto;
+padding: 20px 0 20px 500px;
+}
+
+.img-404 img{ 
+    width: 60%;
+    padding: 0;
+}

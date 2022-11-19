@@ -5,35 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>La boutique</title>
 </head>
 <body>
     <header class="header">
         <!-- Navbar section -->
-        <nav class="navbar">
-            <div class="menu-burger"></div>
-            <ul class="navbar-list">
-                <li><a class="navbar-links" href="./index.html">INICIO</a></li>
-                <li><a class="navbar-links" href="#about">PRODUCTOS</a></li>
-                <li><a class="navbar-links" href="#products">NOSOTROS</a></li>
-            </ul>
-        </nav>
-        <!-- Logo -->     
         <div class="logo-container">
             <img src="./assets/imgs/logo/logo2.png" alt="LaBoutique logo" class="header-logo">
         </div>
+        <nav class="navbar">
+            <div class="menu-label">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="navbar-list">
+                <li><a class="navbar-links" href="./index.html">INICIO</a></li>
+                <li><a class="navbar-links" href="#products">PRODUCTOS</a></li>
+                <li><a class="navbar-links" href="./about-us.html">NOSOTROS</a></li>
+            </ul>
+
+        <!-- Logo -->     
         <div class="buttons">
-                <a href="#"><button class="btn"><i class="fa-solid fa-user"></i></button></a>
-                <a href="#"><button class="btn"><i class="fa-solid fa-cart-shopping"></i></button></a>
+            <a href="/register.html"><button class="btn"><i class="fa-solid fa-user"></i></button></a>
+            <a href="#"><button class="btn"><i class="fa-solid fa-cart-shopping"></i></button></a>
         </div>
+        </nav>   
     </header>
- <hr class="hr">
-    <!-- Container -->
+<hr class="hr">
 
 
- <section class="news">
 
+<!-- Sección para recibir novedades -->
+<section class="news">
     <div class="form">
         <h3 class="h3">SUSCRIBITE PARA RECIBIR NUESTRAS NOVEDADES & OFERTAS</h3>
         <input type="email" name="email" id="email" placeholder="Email Adress">
@@ -42,32 +47,37 @@
     </div>
     
     <div class="btn-subs">
-        <button>SUSCRIBITE ></button>
+        <a href="/register.html"><button type="submit">SUSCRIBITE ></button></a>
     </div>
     <div class="socials">
         <h4 class="follow">Sociales:</h4>
-        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.instagram.com/laboutiquedelviolero/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
         <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.facebook.com/laboutiquedelviolero" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         <a href="https://whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
- </section>
+</section>
 </main>
-    <!-- Footer -->
 
+
+    <!-- Footer -->
     <footer class="footer">
-     <div class="description-footer">
-        <div class="logo-footer"><img src="/assets/imgs/logo/logo3.png" alt=""></div>
+    <div class="description-footer">
+        <div class="logo-footer">
+            <a href="/index.html"><img src="/assets/imgs/logo/logo3.png" alt=""></a>
+        </div>
+
+        <!-- Listas desordenadas -->
         <div class="ul-1">
             <hr class="hr-final">
             <h5>Productos</h5>
             <ul>
-                <a href=""><li>Guitarras Electricas</li></a>
-                <a href=""><li>Guitarras Acústicas</li></a>
-                <a href=""><li>Bajos electricos</li></a>
-                <a href=""><li>Bajos acústicos</li></a>
-                <a href=""><li>Amplificadores</li></a>
+                <a href="#products"><li>Guitarras Electricas</li></a>
+                <a href="/404.html"><li>Guitarras Acústicas</li></a>
+                <a href="/404.html"><li>Bajos electricos</li></a>
+                <a href="/404.html"><li>Bajos acústicos</li></a>
+                <a href="/404.html"><li>Amplificadores</li></a>
             </ul>
         </div>
         <div class="ul-2">
@@ -86,11 +96,13 @@
                 <a href=""><li>Ayuda</li></a>
                 <a href=""><li>Búsqueda de número de serie</li></a>
                 <a href=""><li>Garantías</li></a>
-                <a href=""><li>Defensa al consumido</li></a>
+                <a href=""><li>Defensa al consumidor</li></a>
             </ul>
-
         </div>
-     </div>
+    </div>
     </footer>
+    <div class="copyright"> Derechos reservados @erikschrettel Web Developer.</div>
+    <script src="/list.js"></script>
+    <script src="/main.js"></script>
 </body>
-</html
+</html>

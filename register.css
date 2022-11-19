@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+.register {
+    height: 500px;
+}
+
+form {
+    position: absolute;
+    min-width: 280px;
+    max-width: 25%;
+    width: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    background: #680000;
+    background: -moz-linear-gradient(top, #680000 0%, #FF0202 0%, #A90101 100%);
+    background: -webkit-linear-gradient(top, #680000 0%, #FF0202 0%, #A90101 100%);
+    background: linear-gradient(to bottom, #680000 0%, #FF0202 0%, #A90101 100%);
+    backdrop-filter: blur(1rem);
+    border-radius: 5px;
+    color: white;
+}
+
+input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 5px 6px;
+    margin-bottom: 15px;
+    outline: none;
+    border: none;
+    border-radius: 1px;
+}
+
+.acuerdo {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+button {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 1px;
+    border: none;
+    cursor: pointer
+}
+
+.link {
+    text-align: center;
+
+}
+
+@media (max-width: 576px) {
+
+   form {
+    top: 45%;
+   }
+}

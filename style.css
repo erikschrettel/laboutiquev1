@@ -97,9 +97,24 @@ a {
 
 .btn:hover{
     color:white;
-    background-color: #a90101
+    background-color: #a90101;
 }
 
+.btns {
+    background-color: white;
+    color: #a90101;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 3px 3px;
+    cursor: pointer;
+    border: none;
+}
+
+.btns:hover{
+    color:white;
+    background-color: #a90101
+}
+/*
 .hr {
     height: 1px;
     background-color: red;
@@ -166,6 +181,8 @@ a {
 .hr-2 {
     width: 100%;
 }
+
+
 
 /* Categories products */
 
@@ -549,3 +566,5 @@ background-color: white;
     align-items: center;
     background-color: #fafafa;
 }
+
+/*

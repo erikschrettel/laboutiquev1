@@ -12,6 +12,7 @@ const btnLoad = document.querySelector('.btn-load')
 // Para comprar
 const buyBtn = document.querySelector('.btn-buy');
 const cartBtn = document.querySelector('.cart-label');
+const cerrarCart = document.querySelector('.close-cart')
 const barsBtn = document.querySelector('.menu-label');
 const cartMenu = document.querySelector('.cart');
 const barsMenu = document.querySelector('.navbar-list');
@@ -97,11 +98,42 @@ const applyFilter = (e) => {
     }
 }
 
+//Menu interface
+//* Logica para abrir y cerrar el menu y mostrar el over lay 
+
+// const toggleMenu = () => {
+//     barsMenu.classList.toggle('open-menu');
+//     if(cartMenu.classList.contains('open-cart')) {
+//         cartMenu.classList.remove('open-cart');
+//     }
+//     overlay.classList.toggle('show-overlay')
+// }
+
+// const toggleCart = () => {
+//     cartMenu.classList.toggle('open-cart');
+//     if(barsMenu.classList.contains('open-menu')) {
+//         barsMenu.classList.remove('open-menu')
+//         return;
+//     }
+// }
+// overlay.classList.toggle('show-overlay')
+
+const openCart = () => {
+    cartMenu.classList.remove('hidden');
+  }
+  
+  const closeCart = () => {
+    cartMenu.classList.add('hidden');
+  };
+
 // Funcion inicializadora
 
 const init = () => {
     renderProducts();
     categories.addEventListener('click', applyFilter);
+    cartBtn.addEventListener('click', openCart);
+    cerrarCart.addEventListener('click', closeCart)
+    barsBtn.addEventListener('click', toggleMenu)
 }
 
 init()
