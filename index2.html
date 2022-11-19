@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="404.css">
     <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -21,77 +23,30 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
             <ul class="navbar-list">
-                <li><a class="navbar-links" href="./index.html">INICIO</a></li>
-                <li><a class="navbar-links" href="#products">PRODUCTOS</a></li>
-                <li><a class="navbar-links" href="./404.html">NOSOTROS</a></li>
+                <li><a class="navbar-links" href="./index.html">Volver atrás</a></li>
             </ul>
 
-<a href="/register.html"><button class="btn"><i class="fa-solid fa-user"></i></button></a>
-
-<div class="buttons">
-            <a href="#"><button class="btns"><i class="fa-solid fa-cart-shopping"></i></button></a>
-</div>
-
-        <!-- <div class="cart">
-            <h2>Tus compras</h2>
-            <div class="cart-container"></div>
-            <span class="divider"></span>
-            <div class="cart-total">
-                <p>Total:</p>
-                <span class="total">Mucho</span>
-            </div>
-            <button class="btn-buy">Comprar</button>
-            <button class="btn-delete">Vaciar carrito</button>
+        <!-- Logo -->     
+        <div class="buttons">
+            <a href="/register.html"><button class="btn"><i class="fa-solid fa-user"></i></button></a>
+            <a href="#"><button class="btn"><i class="fa-solid fa-cart-shopping"></i></button></a>
         </div>
-        <div class="overlay"></div> -->
         </nav>   
     </header>
-
 <hr class="hr">
-    <!-- Container -->
-    <main>
-<!-- Hero -->
-<section class="hero-section">
-    <div class="description">
-        <h1>● La boutique ●</h1>
-        <h2>DEL <span>VIOLERO</span></h2>
-        <h4>Este es tu espacio, donde vas a poder ver y escuchar la viola que tanto soñas. Contamos con amplio stock en guitarras, bajos y amplificadores usados de la mejor calidad y en el mejor estado posible! 
-        </h4>
-        <a href="#new-products"><button class="btn-ver">Ver más</button></a>
-    </div>
-    <div class="hero-logo">
-        <img src="./assets/imgs/guitars/hero-img.png" alt="gibsonsg" class="hero-img">
-    </div>
-</section>
-<hr class="hr-2">
-<section class="products" id="products">
-    <div class="categories">
-        <!-- <button class="category active">Todas</button> -->
-        <button class="category fender" data-category="fender"></button>
-        <button class="category gibson" data-category="gibson"></button>
-        <button class="category prs" data-category="prs"></button>
-        <button class="category gretsch" data-category="gretsch"></button>
-        <button class="category ibanez" data-category="ibanez"></button>
-    </div>
-    <hr class="hr-2">
-</section>
 
-
-<div class="cards-container"></div>
-
-<!-- Nuevos productos, aun no disponibles -->
-
-<article class="new-products" id="new-products">
-    <h3>¡ PRÓXIMAMENTE !</h3>
-    <div class="next-products">
-        <div class="bass-product"><h2>BAJOS</h2></div>
-        <div class="acoustic-product"><h2>ACÚSTICAS</h2></div>
-        <div class="amps-product"><h2>AMPLIFICADORES</h2></div>
-    </div>
+<article class="register">
+    <form action="">
+        <h1>Iniciar sesion</h1>
+        <input type="email" placeholder="Ingrese su correo" id="">
+        <input type="password" placeholder="Ingrese su contraseña" id="">
+        <p class="acuerdo">Estoy de acuerdo con los términos y condiciones</p>
+        <button>Ingresar</button>
+        <p class="link"><a href="#">Aún no tenes cuenta?</a></p>
+    </form>
 </article>
 
 <!-- Sección para recibir novedades -->
-
 <section class="news">
     <div class="form">
         <h3 class="h3">SUSCRIBITE PARA RECIBIR NUESTRAS NOVEDADES & OFERTAS</h3>
