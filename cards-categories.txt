@@ -1,0 +1,25 @@
+<section class="products" id="products">
+    <div class="categories">
+                    <div class="category" data-category="fender" id="fender">
+                            <img src="./assets/imgs/logo/fender.png" alt="Fenderguitars">
+                                
+                    </div>
+                    <div class="category" data-category="prs" id="prs">
+                                <img src="./assets/imgs/logo/Prs_guitars_logo.png" alt="PRSguitars">
+                            
+                    </div>
+                    <div class="category" data-category="gibson" id="gibson">
+                                <img src="./assets/imgs/logo/gibson.png" alt="Gibsonguitars">
+                        
+                    </div>
+                    <div class="category" data-category="gretsch" id="gretsch">
+                                <img src="./assets/imgs/logo/gretsch-guitars-logo-vector.png" alt="">
+                    
+                    </div>
+                    <div class="category" data-category="ibanez" id="ibane">
+                            <img src="./assets/imgs/logo/Ibanez.png" alt="ibanezguitars">
+                                
+                    </div>
+    </div>
+    <hr class="hr-2">
+</section>

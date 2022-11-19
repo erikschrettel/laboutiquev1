@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>La boutique</title>
+</head>
+<body>
+    <header class="header">
+        <!-- Navbar section -->
+        <div class="logo-container">
+            <img src="./assets/imgs/logo/logo2.png" alt="LaBoutique logo" class="header-logo">
+        </div>
+        <nav class="navbar">
+            <div class="menu-label">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="navbar-list">
+                <li><a class="navbar-links" href="./index.html">INICIO</a></li>
+                <li><a class="navbar-links" href="#products">PRODUCTOS</a></li>
+                <li><a class="navbar-links" href="./about-us.html">NOSOTROS</a></li>
+            </ul>
+
+        <!-- Logo -->     
+        <div class="buttons">
+            <a href="/register.html"><button class="btn"><i class="fa-solid fa-user"></i></button></a>
+            <a href="#"><button class="btn"><i class="fa-solid fa-cart-shopping"></i></button></a>
+        </div>
+        </nav>   
+    </header>
+<hr class="hr">
+    <!-- Container -->
+    <main>
+<!-- Hero -->
+<section class="hero-section">
+    <div class="description">
+        <h1>● La boutique ●</h1>
+        <h2>DEL <span>VIOLERO</span></h2>
+        <h4>Este es tu espacio, donde vas a poder ver y escuchar la viola que tanto soñas. Contamos con amplio stock en guitarras, bajos y amplificadores usados de la mejor calidad y en el mejor estado posible! 
+        </h4>
+        <a href="#new-products"><button class="btn-ver">Ver más</button></a>
+    </div>
+    <div class="hero-logo">
+        <img src="./assets/imgs/guitars/hero-img.png" alt="gibsonsg" class="hero-img">
+    </div>
+</section>
+<hr class="hr-2">
+<section class="products" id="products">
+    <div class="categories">
+        <!-- <button class="category active">Todas</button> -->
+        <button class="category fender" data-category="fender"></button>
+        <button class="category gibson" data-category="gibson"></button>
+        <button class="category prs" data-category="prs"></button>
+        <button class="category gretsch" data-category="gretsch"></button>
+        <button class="category ibanez" data-category="ibanez"></button>
+    </div>
+    <hr class="hr-2">
+</section>
+
+
+<div class="cards-container"></div>
+<!-- <button class="btn-load">Ver más</button> -->
+
+<!-- Nuevos productos, aun no disponibles -->
+
+<article class="new-products" id="new-products">
+    <h3>¡ PRÓXIMAMENTE !</h3>
+    <div class="next-products">
+        <div class="bass-product"><h2>BAJOS</h2></div>
+        <div class="acoustic-product"><h2>ACÚSTICAS</h2></div>
+        <div class="amps-product"><h2>AMPLIFICADORES</h2></div>
+    </div>
+</article>
+
+<!-- Sección para recibir novedades -->
+
+<section class="news">
+    <div class="form">
+        <h3 class="h3">SUSCRIBITE PARA RECIBIR NUESTRAS NOVEDADES & OFERTAS</h3>
+        <input type="email" name="email" id="email" placeholder="Email Adress">
+        <label for="email"></label>
+        <hr>
+    </div>
+    
+    <div class="btn-subs">
+        <a href="/register.html"><button type="submit">SUSCRIBITE ></button></a>
+    </div>
+    <div class="socials">
+        <h4 class="follow">Sociales:</h4>
+        <a href="https://www.instagram.com/laboutiquedelviolero/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.facebook.com/laboutiquedelviolero" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+</section>
+</main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="description-footer">
+        <div class="logo-footer">
+            <a href="/index.html"><img src="/assets/imgs/logo/logo3.png" alt=""></a>
+        </div>
+
+        <!-- Listas desordenadas -->
+        <div class="ul-1">
+            <hr class="hr-final">
+            <h5>Productos</h5>
+            <ul>
+                <a href="#products"><li>Guitarras Electricas</li></a>
+                <a href="/404.html"><li>Guitarras Acústicas</li></a>
+                <a href="/404.html"><li>Bajos electricos</li></a>
+                <a href="/404.html"><li>Bajos acústicos</li></a>
+                <a href="/404.html"><li>Amplificadores</li></a>
+            </ul>
+        </div>
+        <div class="ul-2">
+            <hr class="hr-final">
+            <h5>Empresa</h5>
+            <ul>
+                <a href=""><li>Sobre nosotros</li></a>
+                <a href=""><li>Contacto</li></a>
+                <a href=""><li>Trabaja para la boutique</li></a>
+            </ul>
+        </div>
+        <div class="ul-3">
+            <hr class="hr-final">
+            <h5>Atención al cliente</h5>
+            <ul>
+                <a href=""><li>Ayuda</li></a>
+                <a href=""><li>Búsqueda de número de serie</li></a>
+                <a href=""><li>Garantías</li></a>
+                <a href=""><li>Defensa al consumidor</li></a>
+            </ul>
+        </div>
+    </div>
+    </footer>
+    <div class="copyright"> Derechos reservados @erikschrettel Web Developer.</div>
+    <script src="/list.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>

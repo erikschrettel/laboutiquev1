@@ -1,0 +1,24 @@
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 65px;
+  }
+
+  .navbar-list li {
+    position: relative;
+  }
+  
+  .navbar-link li a::after {
+    height: 2px;
+    width: 100%;
+    background: var(--text-white);
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease;
+  }
+  
+  .navbar-list li a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  } 
