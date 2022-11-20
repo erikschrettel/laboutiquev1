@@ -111,9 +111,9 @@ const splitProducts = size => {
 
   // Guardamos en variable un objeto para dividir los productos en arrays de 6 y manejar la paginacion
 const productsController = {
-    dividedProducts: splitProducts(6),
+    dividedProducts: splitProducts(8),
     nextProductsIndex: 1,
-    productsLimit: splitProducts(6).length,
+    productsLimit: splitProducts(8).length,
 };
 
 console.log(productsController);
