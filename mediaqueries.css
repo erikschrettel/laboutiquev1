@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 120px;
+    height: 100px;
     width: 100%;
     max-width: 992px;
     z-index: 999;
@@ -24,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 7px;
 }
 
 .navbar-list {
@@ -108,14 +108,14 @@ display: none;
 display: flex;
 justify-content: space-between;
 align-items: center;
-height: 120px;
+height: 90px;
 width: 100%;
 max-width: 576px;
 padding: 0;
 }
 
 .logo-container img{
-    height: 100px;
+    height: 80px;
     padding: 0 0 0 5px;
 }
 
@@ -166,7 +166,8 @@ padding: 0 0 15px 0;
 
 .description h4 {
 text-align: center;
-font-size: 17px;
+padding: 0 0 15px 0;
+font-size: 14px;
 }
 
 .btn-ver {
@@ -349,6 +350,11 @@ width: 80%;
 
 .ul-3 .hr-final {
 width: 90%;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
 }
 
 }

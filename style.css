@@ -17,7 +17,7 @@ body {
 
 .header {
     background-color: #1c1c1c;
-    height: 120px;
+    height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -27,14 +27,14 @@ body {
 }
 
 .logo-container img{
-    height: 115px;
+    height: 90px;
     width: auto; 
     cursor: pointer; 
     transition: all 0.4s;
 }
 
 .header .logo-container img:hover{
-    transform: scale(1.1);
+    transform: scale(0.9);
 }
 
 .navbar, .navbar-list {
