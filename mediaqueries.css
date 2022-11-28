@@ -21,21 +21,28 @@
 }
 
 .navbar {
-    display: none
+    gap: 25px;
 }
 
-.logo-container img{
-    height: 115px;
-    cursor: pointer; 
-    transition: all 0.4s;
-}
-
-.header.logo-container img:hover{
-    transform: scale(1.1);
-}
-
-.navbar, .navbar-list {
+.navbar-list {
+    background-color: #121212;
+    position: absolute;
+    top: 121px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    flex-direction: column;
+    border-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+    align-items: flex-start;
+    padding: 45px 30px;
+    gap: 25px;
+    z-index: 2;
     display: none;
+}
+
+.navbar-list a {
+    display: flex;
     padding: 0 20px;
     font-size: 18px;
     font-family: 'Lalezar';
@@ -51,10 +58,16 @@ a {
 display: none;
 }
 
-.navbar, .menu-label i{
+.menu-label {
     color: white;
     display: flex;
-    height: 100px;
+    order: 2;
+    cursor: pointer;
+    height: 20px;
+}
+
+.open-menu {
+    display: flex;
 }
 
 }
@@ -82,37 +95,47 @@ max-width: 576px;
 padding: 0;
 }
 
-.navbar {
-display: none;
+.logo-container img{
+    height: 100px;
+    padding: 0 0 0 5px;
 }
 
-.logo-container img{
-height: 100px;
-padding: 0 0 0 5px;
+.open-menu {
+    display: flex;
 }
+
+.menu-label{
+    display: flex;
+    order: 2;
+}
+
+.menu-label img{
+    background: #121212;
+    height: 25px;
+    width: 25px;
+}
+
 
 .navbar, .navbar-list {
-display: none;
+display: flex;
 padding: 0 20px;
 font-size: 18px;
 }
 
 a {
-display: inline;
+    display: flex;
+}
+
+.btn {
+display: none;
 position: relative;
 color: #cbc9c9;
 }
 
-.buttons {
-display: none;
+.cart-label {
+display: flex;
 }
 
-.navbar, .menu-label i{
-color: white;
-display: flex;
-justify-content: center;
-align-items: center;
-}
 
 /* Hero Section */
 

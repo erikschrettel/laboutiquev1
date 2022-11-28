@@ -1,22 +1,25 @@
 //* Variables 
 
 //Contenedor de productos
-
 const productsCards = document.querySelector('.cards-container');
+// Contenedor del carrito
 const productsCart = document.querySelector('.cart-container');
 const total = document.querySelector('.total');
 const categories = document.querySelector('.categories');
 // HTML Collection de todas las categorias (category), para ma nejarlo con dataset
 const categoriesList = document.querySelectorAll('category');
 const btnLoad = document.querySelector('.btn-load')
-// Para comprar
+// Variables del carrito, menu y overlay
 const buyBtn = document.querySelector('.btn-buy');
 const cartBtn = document.querySelector('.cart-label');
-const cerrarCart = document.querySelector('.close-cart')
 const barsBtn = document.querySelector('.menu-label');
 const cartMenu = document.querySelector('.cart');
 const barsMenu = document.querySelector('.navbar-list');
 const overlay = document.querySelector('.overlay');
+// Boton para vaciar carrito
+const deleteCartBtn = document.querySelector('.btn-delete');
+// Selector del modal
+const successModal = document.querySelector('.add-modal')
 
 //Setear el array para el carrito
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -101,39 +104,31 @@ const applyFilter = (e) => {
 //Menu interface
 //* Logica para abrir y cerrar el menu y mostrar el over lay 
 
-// const toggleMenu = () => {
-//     barsMenu.classList.toggle('open-menu');
-//     if(cartMenu.classList.contains('open-cart')) {
-//         cartMenu.classList.remove('open-cart');
-//     }
-//     overlay.classList.toggle('show-overlay')
-// }
+const toggleMenu = () => {
+    barsMenu.classList.toggle('open-menu');
+     if (cartMenu.classList.contains('open-cart')) {
+         cartMenu.classList.remove('open-cart');
+         return;
+    }
+    overlay.classList.toggle('show-overlay');
+};
 
-// const toggleCart = () => {
-//     cartMenu.classList.toggle('open-cart');
-//     if(barsMenu.classList.contains('open-menu')) {
-//         barsMenu.classList.remove('open-menu')
-//         return;
-//     }
-// }
-// overlay.classList.toggle('show-overlay')
-
-const openCart = () => {
-    cartMenu.classList.remove('hidden');
-  }
-  
-  const closeCart = () => {
-    cartMenu.classList.add('hidden');
-  };
+const toggleCart = () => {
+    cartMenu.classList.toggle('open-cart');
+     if (barsMenu.classList.contains('open-menu')) {
+     barsMenu.classList.remove('open-menu');
+        return;
+     }
+     overlay.classList.toggle('show-overlay')
+}
 
 // Funcion inicializadora
 
 const init = () => {
     renderProducts();
     categories.addEventListener('click', applyFilter);
-    cartBtn.addEventListener('click', openCart);
-    cerrarCart.addEventListener('click', closeCart)
-    barsBtn.addEventListener('click', toggleMenu)
-}
+    cartBtn.addEventListener('click', toggleCart);
+    barsBtn.addEventListener('click', toggleMenu);
+};
 
 init()
