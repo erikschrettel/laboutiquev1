@@ -122,6 +122,20 @@ const toggleCart = () => {
      overlay.classList.toggle('show-overlay')
 }
 
+// Funcion para scrollear y cerrar carrito/menu
+
+const closeOnScroll = () => {
+    if (
+        !barsMenu.classList.contains('open-menu') &&
+        !cartMenu.classList.contains('open-cart')
+    )
+    return;
+
+    barsMenu.classList.remove('open-menu');
+    cartMenu.classList.remove('open-cart');
+    overlay.classList.remove('show-overlay');
+}
+
 // Funcion inicializadora
 
 const init = () => {
@@ -129,6 +143,7 @@ const init = () => {
     categories.addEventListener('click', applyFilter);
     cartBtn.addEventListener('click', toggleCart);
     barsBtn.addEventListener('click', toggleMenu);
+    window.addEventListener('scroll', closeOnScroll);
 };
 
 init()

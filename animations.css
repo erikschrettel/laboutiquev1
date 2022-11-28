@@ -4,6 +4,8 @@ html {
     scroll-padding-top: 65px;
   }
 
+/* Hover elementos "a" del navbar */
+
   .navbar-list li {
     position: relative;
   }
@@ -22,3 +24,24 @@ html {
     transform-origin: bottom left;
     transform: scaleX(1);
   } 
+
+/* Overlay */
+
+.overlay {
+  position: absolute;
+  top: 101px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(25px);
+  display: none;
+}
+
+/* Toggle para el overlay (funciona si abrimos el carrito o el menu */
+
+.show-overlay {
+  display: block;
+}
