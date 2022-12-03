@@ -30,10 +30,10 @@
 .navbar-list {
     background-color: #121212;
     position: absolute;
-    top: 121px;
-    left: 5%;
+    top: 89px;
+    left: 0%;
     right: 5%;
-    width: 90%;
+    width: 100%;
     flex-direction: column;
     border-top: 0px;
     border-radius: 0px 0px 15px 15px;
@@ -53,6 +53,10 @@
 
 .navbar button {
     display: none;
+}
+
+.hidden {
+    display: flex;
 }
 
 .buttons {

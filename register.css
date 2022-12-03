@@ -4,16 +4,19 @@
     box-sizing: border-box
 }
 
-.register {
-    height: 500px;
-}
-
 .navbar-list {
-    display: flex;
+display: flex;
 }
 
-.navbar .navbar-list a{
-    display: flex;
+
+.register {
+    height: 570px;
+}
+
+
+.register h1 {
+    text-align: center;
+    padding: 0 0 10px 0;
 }
 
 
@@ -21,7 +24,6 @@ form {
     position: absolute;
     min-width: 280px;
     max-width: 25%;
-    width: 25%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -44,7 +46,7 @@ input{
     margin-bottom: 15px;
     outline: none;
     border: none;
-    border-radius: 1px;
+    border-radius: 5px;
 }
 
 .acuerdo {
@@ -54,7 +56,10 @@ input{
 }
 
 button {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin: auto;
     width: 100%;
     height: 30px;
@@ -62,20 +67,16 @@ button {
     color: white;
     border-radius: 1px;
     border: none;
-    cursor: pointer
+    cursor: pointer;
 }
 
-.link {
-    text-align: center;
+a {
+    display: flex;
+    justify-content: center;
 }
 
  @media (max-width: 576px) {
 
-    
-
-   form {
-    top: 45%;
-   }
 
 .navbar-list {
     display: flex;

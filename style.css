@@ -11,7 +11,8 @@
 body {
     background-color: #fafafa;
     font-family: 'Russo One';
-    font-weight: 300;
+    text-decoration: none;
+    list-style-type: none;
     
 }
 
@@ -69,18 +70,191 @@ a {
     color: white;
 }
 
-.navbar, .buttons {
+.hidden {
+    display: none;
+}
+
+.cart-icon {
+    background-color: white;
+    color: #a90101;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 4px 3px;
+    cursor: pointer;
+    border: none;
+}
+
+.cart-icon:hover{
+    color:white;
+    background-color: #a90101;
+}
+/* MENU HAMBURGUESA Y CARRITO */
+
+.menu-label {
+    display: none;
+}
+
+/*carrito*/
+.cart {
+    position: absolute;
+    top: 102px;
+    right: 0;
+    padding: 20px 30px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: calc(100vh - 65px);
+    overflow-y: scroll;
+    z-index: 2;
+    min-width: 375px;
+    transform: translate(200%);
+    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/*OCULTAR BARRA DE SCROLL DEL CARRITO*/
+
+.cart::-webkit-scrollbar {
+    display: none;
+}
+
+.cart h2 {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #2323234e;
+    padding: 20px;
+    border: 1px solid var(--electric);
+    border-radius: 10px;
+}
+
+.cart-item img {
+    height: 65px;
+    width: 65px;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 110px;
+}
+
+.item-title {
+    color: var(--text-white);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.item-bid {
+    color: var(--text-gray);
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.item-price {
+    background: linear-gradient(to right, #30cfd0, #c43ad6);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.item-handler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.quantity-handler {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    padding: 2px 8px;
+    border-radius: 5px;
+    color: var(--text-white);
+    font-weight: 400;
 }
 
-/* MENU HAMBURGUESA Desktop */
+.item-quantity {
+    color: var(--text-gray);
+}
+
+.up {
+    border: 1px solid var(--electric);
+}
+
+.down {
+    background-color: var(--secondary);
+    border: 1px solid var(--electric);
+}
+
+.divider {
+    margin-top: 20px;
+    border: 0.5px solid var(--electric);
+    width: 100%;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+
+.cart-total p {
+    color: var(--text-white);
+    font-weight: 700;
+}
+
+.cart-total span {
+    color: var(--text-white);
+    font-weight: 400;
+    font-size: 18px;
+}
 
 
-.navbar .menu-label i{
-    display: none;
+.btn-buy {
+    background-color: #a90101;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 3px 3px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-delete {
+    background-color: #a90101;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 3px 3px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Toggle del carrito */
+
+.open-cart{
+    transform: translate(0%);
+    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
 }
 
 /* Register & Cart buttons */
@@ -100,27 +274,6 @@ a {
     background-color: #a90101;
 }
 
-.cart-icon {
-    background-color: white;
-    color: #a90101;
-    font-size: 16px;
-    border-radius: 5px;
-    padding: 4px 3px;
-    cursor: pointer;
-    border: none;
-}
-
-.cart-icon:hover{
-    color:white;
-    background-color: #a90101
-}
-
-/*
-.hr {
-    height: 1px;
-    background-color: red;
-    width: 100%;
-}
 
 /* Hero Section */
 
@@ -566,154 +719,4 @@ background-color: white;
     justify-content: center;
     align-items: center;
     background-color: #fafafa;
-}
-
-/* MENU HAMBURGUESA Y CARRITO */
-
-.menu-label {
-    display: none;
-  }
-  
-  /*carrito*/
-  .cart {
-    position: absolute;
-    top: 121px;
-    right: 0;
-    padding: 20px 30px;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
-    background: #fafafa;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    height: calc(100vh - 65px);
-    overflow-y: scroll;
-    z-index: 2;
-    min-width: 375px;
-    transform: translate(0%);
-    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
-  }
-  
-  .cart-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-
-/*OCULTAR BARRA DE SCROLL DEL CARRITO*/
-
-.cart::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .cart h2 {
-    color: var(--text-white);
-    font-size: 20px;
-    font-weight: 600;
-  }
-  
-  .cart-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    background-color: #2323234e;
-    padding: 20px;
-    border: 1px solid var(--electric);
-    border-radius: 10px;
-  }
-  
-  .cart-item img {
-    height: 65px;
-    width: 65px;
-  }
-  
-  .item-info {
-    display: flex;
-    flex-direction: column;
-    min-width: 110px;
-  }
-  
-  .item-title {
-    color: var(--text-white);
-    font-weight: 600;
-    font-size: 14px;
-  }
-  
-  .item-bid {
-    color: var(--text-gray);
-    font-weight: 300;
-    font-size: 12px;
-  }
-  
-  .item-price {
-    background: linear-gradient(to right, #30cfd0, #c43ad6);
-    background-clip: text;
-    color: transparent;
-    -webkit-background-clip: text;
-    font-size: 16px;
-    font-weight: 800;
-  }
-  
-  .item-handler {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .quantity-handler {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2px 8px;
-    border-radius: 5px;
-    color: var(--text-white);
-    font-weight: 400;
-  }
-  
-  .item-quantity {
-    color: var(--text-gray);
-  }
-  
-  .up {
-    border: 1px solid var(--electric);
-  }
-  
-  .down {
-    background-color: var(--secondary);
-    border: 1px solid var(--electric);
-  }
-  
-  .divider {
-    margin-top: 20px;
-    border: 0.5px solid var(--electric);
-    width: 100%;
-  }
-  
-  .cart-total {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    width: 100%;
-  }
-  
-  .cart-total p {
-    color: var(--text-white);
-    font-weight: 700;
-  }
-  
-  .cart-total span {
-    color: var(--text-white);
-    font-weight: 400;
-    font-size: 18px;
-  }
-  
-
-/* Toggle del carrito */
-
-.open-cart {
-    display: none;
-    transform: translate(0%);
-    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
 }
