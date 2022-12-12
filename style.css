@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Jockey+One&family=Lalezar&family=Oleo+Script&family=Pattaya&family=Russo+One&family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Jockey+One&family=Lalezar&family=Montserrat:wght@600;700&family=Oleo+Script&family=Pattaya&family=Rubik:wght@700&family=Russo+One&family=Viga&display=swap');
 
 * {
     margin: 0;
@@ -25,6 +25,8 @@ body {
     align-items: center;
     z-index: 999;
     padding: 0 0 0 30px;
+    top: 0;
+    position: fixed;
 }
 
 .logo-container img{
@@ -97,7 +99,7 @@ a {
 /*carrito*/
 .cart {
     position: absolute;
-    top: 102px;
+    top: 100px;
     right: 0;
     padding: 20px 30px;
     border-left: 1px solid black;
@@ -278,23 +280,21 @@ a {
 /* Hero Section */
 
 .hero-section {
+    margin: 70px 0 0 0;
     background-color:  #fafafa;
     width: 100%;
+    height: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    padding: 60px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 18px 40px -10px;
-
 }
 
 .description {
     background-color: #fafafa;
     max-width: 500px;
     height: 300px;
-
-
 }
 
 .description h1 {
@@ -309,6 +309,13 @@ a {
     padding: 0 0 15px 0;
 }
 
+.description h4 {
+    font-family: 'Rubik';
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+
 .description span {
     color:#a90101;
 }
@@ -318,14 +325,16 @@ a {
     padding: 6px 20px;
     border-radius: 5px;
     color: #fafafa;
-    border-color: white;
+    border: none;
     background-color: #a90101;
+    transition: all 0.1s;
 }
 
 .btn-ver:hover {
     background-color: red;
     color: white;
     font-size: 15px;
+    transform: scale(1)
 }
 
 .hero-img {
@@ -423,8 +432,10 @@ a {
 .news {
     background-color: #e2e5eb;
     width: 100%;
-    padding: 50px 30px;
+    padding: 20px 0 20px 80px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     gap: 100px;
 }
@@ -436,15 +447,17 @@ a {
     height: 30px;
     border: solid 1px #e2e5eb;
     border-radius: 30px;
-    /* padding: 5px 10px; */
     outline: none;
     font-size: 18px;
     font-family: 'Russo One';
 }
 
+.form hr {
+    width: 90%;
+}
+
 .btn-subs {
 display: flex;
-flex-direction: row;
 justify-content: center;
 align-items: center;
 }
@@ -460,19 +473,19 @@ align-items: center;
 }
 
 .socials {
-    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
 .socials i{
     background-color: #a90101;
-    border-radius: 5px;
+    border-radius: 50px;
     border: 2px solid white;
-    padding: 8px 10px;
+    padding: 7px 7px;
     color: #fafafa;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .socials i:hover {
@@ -486,8 +499,8 @@ align-items: center;
 .footer {
     background-color: #121212;
     width: 100%;
-    height: 500px;
-    padding: 100px 0;
+    height: 400px;
+    padding: 50px 0;
 }
 
 .description-footer {
@@ -719,4 +732,5 @@ background-color: white;
     justify-content: center;
     align-items: center;
     background-color: #fafafa;
+    font-size: 12px;
 }

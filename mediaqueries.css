@@ -17,7 +17,8 @@
     width: 100%;
     max-width: 992px;
     z-index: 999;
-    padding: 0;
+    position: fixed;
+    top: 0;
 }
 
 .navbar {
@@ -51,7 +52,7 @@
     font-family: 'Lalezar';
 }
 
-.navbar button {
+.navbar .btn {
     display: none;
 }
 
@@ -151,7 +152,7 @@ color: #cbc9c9;
 text-align: center;
 width: 100%;
 max-width: 576px;
-padding: 20px 0 20px 0;
+padding: px 0 20px 0;
 }
 
 .description {
@@ -172,7 +173,7 @@ padding: 0 0 15px 0;
 .description h4 {
 text-align: center;
 padding: 0 0 15px 0;
-font-size: 14px;
+font-size: 17px;
 }
 
 .btn-ver {
@@ -185,7 +186,6 @@ padding: 6px 20px;
 
 .hero-img {
 display: none;
-width: 0;
 }
 
 /* Categories products */
@@ -285,9 +285,16 @@ gap: 10px;
 }
 
 .form input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 160px;
     height: 30px;
     font-size: 13px;
+}
+
+.form hr {
+    width: 100%;
 }
 
 .btn-subs button {
@@ -354,12 +361,12 @@ width: 80%;
 }
 
 .ul-3 .hr-final {
-width: 90%;
+width: 95%;
 }
 
 .copyright {
     text-align: center;
-    font-size: 14px;
+    font-size: 11px;
 }
 
 }

@@ -106,26 +106,37 @@ const applyFilter = (e) => {
 
 const toggleMenu = () => {
     barsMenu.classList.toggle('open-menu');
+    if (cartMenu.classList.contains('open-cart')) {
+        cartMenu.classList.remove('open-cart')
+        return;
+    }
+    overlay.classList.toggle('show-overlay')
 };
+
 
 const toggleCart = () => {
     cartMenu.classList.toggle('open-cart');
+    if (barsMenu.classList.contains('open-menu')) {
+        barsMenu.classList.remove('open-menu')
+        return
+    }
+    overlay.classList.toggle('show-overlay')
 };
-  // Funcion inicializadora
+// Funcion inicializadora
 
 // Funcion para scrollear y cerrar carrito/menu
 
-// const closeOnScroll = () => {
-//     if (
-//         !barsMenu.classList.contains('open-menu') &&
-//         !cartMenu.classList.contains('open-cart')
-//     )
-//     return;
+const closeOnScroll = () => {
+    if (
+    !barsMenu.classList.contains('open-menu') &&
+    !cartMenu.classList.contains('open-cart')
+    )
+    return;
 
-//     barsMenu.classList.remove('open-menu');
-//     cartMenu.classList.remove('open-cart');
-//     overlay.classList.remove('show-overlay');
-// }
+    barsMenu.classList.remove('open-menu');
+    cartMenu.classList.remove('open-cart');
+    overlay.classList.remove('show-overlay');
+}
 
 // Funcion inicializadora
 
@@ -134,7 +145,7 @@ const init = () => {
     categories.addEventListener('click', applyFilter);
     cartBtn.addEventListener('click', toggleCart);
     barsBtn.addEventListener('click', toggleMenu);
-    // window.addEventListener('scroll', closeOnScroll);
+    window.addEventListener('scroll', closeOnScroll);
 };
 
 init()

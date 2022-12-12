@@ -27,7 +27,7 @@ html {
 
 /* Overlay */
 
-/* .overlay {
+.overlay {
   position: absolute;
   top: 101px;
   left: 0;
@@ -38,10 +38,10 @@ html {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(25px);
   display: none;
-} */
+} 
 
 /* Toggle para el overlay (funciona si abrimos el carrito o el menu */
 
-/* .show-overlay {
+.show-overlay {
   display: block;
-} */
+} 
